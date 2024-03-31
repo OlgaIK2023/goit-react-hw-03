@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 
-import Description from "./components/Description/Description";
-import Feedback from "./components/Feedback/Feedback";
-import Options from "./components/Options/Options";
-import Notification from "./components/Notification/Notification";
+import Contact from "./components/Contact/Contact";
+import ContactForm from "./components/ContactForm/ContactForm";
+import ContactList from "./components/ContactList/ContactList";
+import SearchBox from "./components/SearchBox/SearchBox";
 
 //APP code below
 

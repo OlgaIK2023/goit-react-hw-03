@@ -1,7 +1,7 @@
 // import clsx from "clsx";
 // import css from "./Profile.module.css";
 
-const Feedback = ({options, total, positivePercentage}) => {
+const ContactForm = ({options, total, positivePercentage}) => {
   return (
     <ul>
       <li>Good: {options.good}</li>
@@ -13,4 +13,4 @@ const Feedback = ({options, total, positivePercentage}) => {
   );
 };
 
-export default Feedback;
+export default ContactForm;

@@ -1,9 +1,9 @@
 
-import "./Options.module.css";
+import "./SearchBox.module.css";
 
 // import clsx from "clsx"
 
-const Options = ({
+const SearchBox = ({
   handleLogOptions,
   handleReset,
   total,
@@ -22,4 +22,4 @@ const Options = ({
   );
 };
 
-export default Options;
+export default SearchBox;

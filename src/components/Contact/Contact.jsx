@@ -1,6 +1,6 @@
 
 
-const Description = () => {
+const Contact = () => {
   return (
     <div>
       <h1>Sip Happens Café</h1>
@@ -9,4 +9,4 @@ const Description = () => {
   )
 }
 
-export default Description
+export default Contact
