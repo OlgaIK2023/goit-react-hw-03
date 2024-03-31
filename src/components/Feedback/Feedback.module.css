@@ -1,0 +1,61 @@
+.profileContainer {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.profileImage {
+    border-radius: 50%;
+    width: 200px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.profileName {
+    font-weight: 800;
+    justify-content: center;
+    display: flex;
+}
+
+.profileTag, .profileLocation {
+    font-weight: 500;
+    
+    justify-content: center;
+    display: flex;
+}
+
+.statsTable {
+    border-top: 1px solid black;
+    width: 500px;
+    display: flex;
+    /* gap: 30px; */
+    align-items: center;
+    justify-content: center;
+
+}
+
+.statsItemFollowers, .statsItemViews  {
+    border-right: 1px solid gray ;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.statsItemLikes {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+
+.statsNumbers {
+    font-weight: 800;
+    align-self: center;
+}
