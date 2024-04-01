@@ -1,8 +1,24 @@
+import Contact from "../Contact/Contact";
+import css from "./ContactList.module.css";
 
-const ContactList = () => {
+const ContactList = ({ contacts, onDeleteContact }) => {
   return (
-    <div>No feedback yet</div>
-  )
-}
+    <ul className={css.list}>
+      {contacts.length === 0 ? (
+        <p>You do not have any contact!</p>
+      ) : (
+        contacts.map((contact) => {
+          return (
+            <Contact
+              key={contact.id}
+              contact={contact}
+              onDeleteContact={onDeleteContact}
+            />
+          );
+        })
+      )}
+    </ul>
+  );
+};
 
-export default ContactList
+export default ContactList;

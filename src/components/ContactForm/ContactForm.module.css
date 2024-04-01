@@ -1,61 +1,37 @@
-.profileContainer {
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.forms {
+    margin: 0 auto 25px;
     border: 1px solid black;
-}
-
-.profileImage {
-    border-radius: 50%;
-    width: 200px;
-    margin-top: 20px;
-    justify-content: center;
-}
-
-.profileName {
-    font-weight: 800;
-    justify-content: center;
+    width: 350px;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  .add {
     display: flex;
-}
-
-.profileTag, .profileLocation {
-    font-weight: 500;
-    
-    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .btn {
     display: flex;
-}
-
-.statsTable {
-    border-top: 1px solid black;
-    width: 500px;
-    display: flex;
-    /* gap: 30px; */
     align-items: center;
-    justify-content: center;
-
-}
-
-.statsItemFollowers, .statsItemViews  {
-    border-right: 1px solid gray ;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.statsItemLikes {
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-
-
-
-.statsNumbers {
-    font-weight: 800;
-    align-self: center;
-}
+    margin: 0 auto;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+  }
+  
+  .btn:hover {
+    background-color: rgb(99, 99, 141);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid black;
+  }
+  
+  .inp {
+    border-radius: 3px;
+  }
+  
+  .err {
+    color: brown;
+  }

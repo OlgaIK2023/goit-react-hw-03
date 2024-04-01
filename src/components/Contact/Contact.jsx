@@ -1,12 +1,27 @@
+import css from "./Contact.module.css";
+import { FaUser } from "react-icons/fa";
+import { FaPhone } from "react-icons/fa6";
 
-
-const Contact = () => {
+const Contact = ({ contact, onDeleteContact }) => {
   return (
-    <div>
-      <h1>Sip Happens Café</h1>
-      <p>Please leave your feedback regarding our service by selecting one of the options below</p>
-    </div>
-  )
-}
+    <li className={css.wrapper_contact}>
+      <div>
+        <h2>
+          <FaUser size="16" /> {contact.name}
+        </h2>
+        <p>
+          <FaPhone size="16" /> {contact.number}
+        </p>
+      </div>
+      <button
+        type="button"
+        className={css.delete_button}
+        onClick={() => onDeleteContact(contact.id)}
+      >
+        Delete
+      </button>
+    </li>
+  );
+};
 
-export default Contact
+export default Contact;

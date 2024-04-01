@@ -1,24 +1,12 @@
 
-import "./SearchBox.module.css";
+import css from "./SearchBox.module.css";
 
-// import clsx from "clsx"
-
-const SearchBox = ({
-  handleLogOptions,
-  handleReset,
-  total,
-}) => {
-  
-
-    
-
+const SearchBox = ({ filter, onChangeFilter }) => {
   return (
-    <div>
-      <button onClick={() => handleLogOptions("good")}>Good</button>
-      <button onClick={() => handleLogOptions("neutral")}>Neutral</button>
-      <button onClick={() => handleLogOptions("bad")}>Bad</button>
-      {total !== 0 && <button onClick={handleReset}>Reset</button>}
-    </div>
+    <label className={css.label}>
+      Finde contacts by name
+      <input placeholder="Search..." value={filter} onChange={onChangeFilter} />
+    </label>
   );
 };
 
