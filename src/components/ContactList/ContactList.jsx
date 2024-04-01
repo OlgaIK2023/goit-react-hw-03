@@ -5,7 +5,7 @@ const ContactList = ({ contacts, onDeleteContact }) => {
   return (
     <ul className={css.list}>
       {contacts.length === 0 ? (
-        <p>You do not have any contact!</p>
+        <p>You do not have any contacts!</p>
       ) : (
         contacts.map((contact) => {
           return (
